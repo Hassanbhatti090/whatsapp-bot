@@ -26,7 +26,7 @@ DEBUG =
 module.exports = {
   VERSION: "v1.2.8",
   SESSION:
-    process.env.ASENA_SESSION === undefined ? "" : process.env.ASENA_SESSION,
+    process.env.ASENA_SESSION === undefined ? "levanter_30f2832458ac5e4a7587de5e3a1914aa9e" : process.env.ASENA_SESSION,
   EXT: process.env.EXT === undefined ? undefined : process.env.EXT,
   LANG:
     process.env.LANGUAGE === undefined
@@ -73,7 +73,7 @@ module.exports = {
         }),
   NO_ONLINE:
     process.env.NO_ONLINE === undefined
-      ? true
+      ? false
       : convertToBool(process.env.NO_ONLINE),
   CLR_SESSION:
     process.env.CLR_SESSION === undefined
